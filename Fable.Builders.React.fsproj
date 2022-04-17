@@ -7,9 +7,9 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Authors>uxsoft</Authors>
         <Description>Fable computation expression based bindings for React HTML</Description>
-        <PackageProjectUrl>https://github.com/uxsoft/Fable.AntDesign</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/uxsoft/Fable.Builders.React</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>
-        <RepositoryUrl>https://github.com/uxsoft/Fable.AntDesign</RepositoryUrl>
+        <RepositoryUrl>https://github.com/uxsoft/Fable.Builders.React</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
@@ -32,6 +32,6 @@
         </None>
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Include="Feliz" Version="1.57.0" />
+      <PackageReference Include="Feliz" Version="1.59.0" />
     </ItemGroup>
 </Project>
