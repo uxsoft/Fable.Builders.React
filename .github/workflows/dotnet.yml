@@ -26,7 +26,7 @@ jobs:
       run: dotnet restore
 
     - name: Publish NuGet
-      uses: rohith/publish-nuget@v2
+      uses: brandedoutcast/publish-nuget@v2
       with:
         PROJECT_FILE_PATH: ./Fable.Builders.React.fsproj
         VERSION_STATIC: 4.${{ github.run_number }}.0
