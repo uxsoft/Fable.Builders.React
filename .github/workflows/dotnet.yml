@@ -22,14 +22,11 @@ jobs:
       with:
         version: 4.${{ github.run_number }}.0
       
-    - name: Install dependencies
+    - name: Restore
       run: dotnet restore
 
-    - name: Publish NuGet
-      uses: brandedoutcast/publish-nuget@v2
-      with:
-        PROJECT_FILE_PATH: ./Fable.Builders.React.fsproj
-        VERSION_STATIC: 4.${{ github.run_number }}.0
-        TAG_COMMIT: true
-        NUGET_KEY: ${{ secrets.NUGET_KEY }}
-        INCLUDE_SYMBOLS: false
+    - name: Pack
+      run: dotnet pack -c Release -o . Fable.Builders.React.fsproj
+      
+    - name: Push
+      run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_KEY }} -s https://api.nuget.org/v3/index.json
