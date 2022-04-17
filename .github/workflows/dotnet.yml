@@ -25,6 +25,9 @@ jobs:
     - name: Restore
       run: dotnet restore
 
+    - name: Build
+      run: dotnet build
+
     - name: Pack
       run: dotnet pack ./Fable.Builders.React.fsproj -c Release -o .
       
