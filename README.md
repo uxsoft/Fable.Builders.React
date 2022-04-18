@@ -1,5 +1,7 @@
 # Fable.Builders.React
 
+<img src="https://buildstats.info/nuget/Fable.Builders.AntDesign" alt="badge"/>
+
 These are F# / Fable bindings for the React framework
 
 ## Getting Started
