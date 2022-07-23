@@ -19,11 +19,11 @@ yarn add react react-dom
 ```fsharp
 [<ReactComponent>]
 let MyComponent (props: {| MyProp: string |}) =
-    div {
+    Div {
         style 
             [ style.float'.right ]
         
-        button {
+        Button {
             str props.MyProp
         }
     }
