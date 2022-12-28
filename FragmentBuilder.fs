@@ -1,9 +1,10 @@
 module Fable.Builders.React.FragmentBuilder
 
 open Fable.Builders.Common
+open Feliz
 
 type FragmentBuilder() =
     inherit ReactBuilder()
 
     member _.Run(s: DSLElement) =
-        Fable.React.Helpers.fragment [] s.Children
+        React.fragment s.Children
